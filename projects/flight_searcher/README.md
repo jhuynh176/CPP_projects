@@ -38,6 +38,6 @@ Chicago           Las Vegas         149   1039
 - Note, values stored cannot contain comma or endline symbol.
 
 ### Link to Program:
-- [simple-flight-seacher.cpp](https://github.com/jhuynh176/cpp_projects/blob/main/projects/flight_searcher/flight_searcher.cpp)
+- [flight_seacher.cpp](https://github.com/jhuynh176/cpp_projects/blob/main/projects/flight_searcher/flight_searcher.cpp)
 ### Link to Test Case: 
-- [test-case.csv](https://github.com/jhuynh176/cpp_projects/blob/main/projects/flight_searcher/test_case.csv)
+- [test_case.csv](https://github.com/jhuynh176/cpp_projects/blob/main/projects/flight_searcher/test_case.csv)
