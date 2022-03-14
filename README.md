@@ -7,8 +7,4 @@
 4. [Stack and Queue Scheduler on CPU](https://github.com/jhuynh176/cpp_projects/tree/main/projects/stack_queue_arithmetic_expression)
 
 ## Introduction:
-- This is the repository to store my C++ projects based on my growing skills.
-
-## Description:
-- These projects will be created along my learning path.
-- As I become more skilled in C++, the more complicated and more useful project will be created.
+- This is the repository to store some of my C++ projects.
