@@ -23,6 +23,7 @@ Write a rock_paper_scissors.cpp program that:
     - [ ] Spock.
 3. `Instructs` the computer to randomly select either Rock, Paper, Scissors, Lizard, or Spock.
 4. `Compares` the user’s choice and the computer’s choice and determine the winner.
-4. `Loop` for rounds.
-5. `Informs` the user who the winner is.
+5. `Update` the current stats.
+6. `Loop` for rounds.
+7. `Informs` the user who the winner is.
 
