@@ -48,6 +48,6 @@ Viana                   Barcelona         2         5.0     $$ - $$$      2707
 ```
 ## Test Case:
 ### Link to Program:
-- [restaurant-trip-advisor.cpp](https://github.com/jhuynh176/cpp_projects/blob/main/projects/restaurant_trip_advisor/restaurant_trip_advisor.cpp)
+- [restaurant_trip_advisor.cpp](https://github.com/jhuynh176/cpp_projects/blob/main/projects/restaurant_trip_advisor/restaurant_trip_advisor.cpp)
 ### Link to Test Case:
-- [test-case.csv](https://github.com/jhuynh176/cpp_projects/blob/main/projects/restaurant_trip_advisor/test_case.csv)
+- [test_case.csv](https://github.com/jhuynh176/cpp_projects/blob/main/projects/restaurant_trip_advisor/test_case.csv)
