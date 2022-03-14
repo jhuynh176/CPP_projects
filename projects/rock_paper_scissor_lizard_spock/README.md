@@ -6,7 +6,7 @@ You may have played Rock, Paper, Scissors, but have you played Rock, Paper, Scis
 
 <h3 align="center"> Rock Paper Scissors Lizard Spock </h3>
 <h2 align="center">
-  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/Rock%2C%20Paper%2C%20Scissors%2C%20Lizard%2C%20Spock/RPSLS.gif" alt="game" width="80%" />
+  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/rock_paper_scissor_lizard_spock/RPSLS.gif" alt="game" width="80%" />
   <br>
 </h2>
 
@@ -26,4 +26,10 @@ Write a rock_paper_scissors.cpp program that:
 5. `Update` the current stats.
 6. `Loop` for rounds.
 7. `Informs` the user who the winner is.
+
+## Sample Output
+<h2 align="center">
+  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/rock_paper_scissor_lizard_spock/output.png" alt="game" width="66%" />
+  <br>
+</h2>
 
