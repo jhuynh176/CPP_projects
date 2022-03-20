@@ -2,14 +2,18 @@
 
 void introduction();
 void engine(int &start, int end);
+int promt();
 
 int main() {
 
-  int start = 1;
-  const int end = 100;
-
   introduction();
+
+  int start = 1;
+  int end = promt();
+
   engine(start, end);
+
+  system("pause");
 
   return 0;
 }
@@ -35,4 +39,12 @@ void engine(int &start, int end) {
       std::cout << start << std::endl;
     start++;
   } while (start <= end);
+}
+
+int promt() {
+    int end = 0;
+    std::cout << "What is your end (max) number? " << std::endl;
+    std::cin >> end;
+
+    return end;
 }
