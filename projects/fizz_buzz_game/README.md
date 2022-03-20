@@ -9,6 +9,11 @@
 - For the multiples of 5, print `Buzz`.
 - For numbers which are multiples of both 3 and 5 print, `FizzBuzz`.
 
+<h2 align="center">
+  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/fizz_buzz_game/fizzbuzz.gif" alt="game" width="80%" />
+  <br>
+</h2>
+
 ## Sample Output
 
 ```
