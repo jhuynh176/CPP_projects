@@ -28,6 +28,8 @@ void introduction() {
 }
 
 void engine(int &start, int end) {
+  std::cout << "Game start . . ." << std::endl;
+  
   do {
     if (start % 3 == 0 && start % 5 == 0)
       std::cout << "FizzBuzz" << std::endl;
@@ -45,6 +47,7 @@ int promt() {
     int end = 0;
     std::cout << "What is your end (max) number? " << std::endl;
     std::cin >> end;
+    std::cout << "\n";
 
     return end;
 }
