@@ -9,4 +9,4 @@
 6. [Jeopardy Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/sorting_hat)
 7. [Fizz Buzz Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/fizz_buzz_game)
 8. [Multiple Account Login System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/multiple_account_login_system)
-9. [Banking Record System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/banking_record_system))
+9. [Banking Record System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/banking_record_system)
