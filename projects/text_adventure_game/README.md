@@ -8,9 +8,9 @@
 ## Description
 - Create a C++ text adventure with the storyline of your choosing. 
 - The game should:
-    -[x] Use the knowledge of C++ `conditionals`, `logic`, and `loops`.
-    -[] Use the knowledge of `Object Oriented programming`.
-    -[] Use the `class`, `private`, `public`.
-    -[x] Be `documented` clearly into files.
+    - Use the knowledge of C++ `conditionals`, `logic`, and `loops`.
+    - Use the knowledge of `Object Oriented programming`. (next version)
+    - Use the `class`, `private`, `public`. (next versino)
+    - Be `documented` clearly into files.
     
 ## Sample
