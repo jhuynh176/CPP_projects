@@ -6,10 +6,11 @@
 # Features:
 
 - This project apply the knowledge of:
-    - `add`
-    - `edit`
-    - `search`
-    - `delete`
+    - `read` file
+    - `write` file
+    - `edit` file
+    - `search` in file
+    - `delete` in file
     - `adjust records in files`
 
 # Output: 
