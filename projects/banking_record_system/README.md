@@ -14,5 +14,15 @@
 
 # Output: 
 ```
-will be updated soon
+Main Menu:
+[1]. New account
+[2]. Deposit amount
+[3]. Withdraw amount
+[4]. Balance enquiry
+[5]. All account holder list
+[6]. Close an account
+[7]. Modify an account
+[8]. Exit
+
+Select your option [1-8]: 
 ```
