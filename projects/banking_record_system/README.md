@@ -14,15 +14,38 @@
 
 # Output: 
 ```
-Main Menu:
-[1]. New account
-[2]. Deposit amount
-[3]. Withdraw amount
-[4]. Balance enquiry
-[5]. All account holder list
-[6]. Close an account
-[7]. Modify an account
-[8]. Exit
 
-Select your option [1-8]: 
+
+==================================
+      BANK MANAGEMENT SYSTEM
+==================================
+
+
+Press any key to continue . . .
+
+Bank Record System - MAIN MENU
+[1]. Create account.
+[2]. Show all account information.
+[3]. Search account based on register order.
+[4]. Deposit.
+[5]. Withdraw.
+[6]. Close an account.
+[7]. Exit.
+2
+
+====== Data from file ======
+First name: first1
+Last name: last1
+Account number: 123
+Account balance: $1000
+
+First name: first2
+Last name: last2
+Account number: 123
+Account balance: $2000
+
+First name: first3
+Last name: last3
+Account number: 123
+Account balance: $3000
 ```

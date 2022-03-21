@@ -39,7 +39,7 @@ void Account::show_account_balance() {
 }
 
 void Account::deposit() {
-    std::cout << "How much would you like to deposit today? \n" 
+    std::cout << "\nHow much would you like to deposit today? \n" 
               << "$";
     std::cin >> money_deposit;
     
@@ -52,7 +52,7 @@ void Account::deposit() {
 }
 
 void Account::withdraw() {
-    std::cout << "How much would you like to withdraw today? \n" 
+    std::cout << "\nHow much would you like to withdraw today? \n" 
               << "$";
     std::cin >> money_withdraw;
     
@@ -64,9 +64,6 @@ void Account::withdraw() {
     std::cout << std::endl;
 }
 
-void Account::close_account() {
-
-}
 /* 
     Class: System function 
 */
@@ -74,30 +71,35 @@ void Account::user_options() {
     std::cout << "Bank Record System - MAIN MENU\n"
               << "[1]. Create account.\n"
               << "[2]. Show account information.\n"
-              << "[3]. Show account balance.\n"
+              << "[3]. Search account based on register order.\n"
               << "[4]. Deposit.\n"
               << "[5]. Withdraw.\n"
-              << "[6]. Close account.\n"
+              << "[6]. Close an account.\n"
               << "[7]. Exit.\n";
 }
 
 void Account::write_file() {
     std::ofstream outfile;
     outfile.open("account_record.dat", std::ios::binary | std::ios::app);
+
     create_account();
+
     outfile.write(reinterpret_cast<char *>(this), sizeof(*this));
+
     outfile.close();
 }
 
 void Account::read_file() {
     std::ifstream infile;
     infile.open("account_record.dat", std::ios::binary);
+
     if(!infile)
     {
-        std::cout << "Error in Opening! File Not Found!!" << std::endl;
+        std::cout << "ERROR: Cannot Open File. File is not found!" << std::endl;
         return;
     }
-    std::cout << "\n****Data from file****" << std::endl;
+    std::cout << "\n====== Data from file ======" << std::endl;
+
     while(!infile.eof())
     {
         if(infile.read(reinterpret_cast<char*>(this), sizeof(*this)))
@@ -105,19 +107,69 @@ void Account::read_file() {
             show_account_info();
         }
     }
+
     infile.close();
 }
 
-
-
 void Account::search_file() {
+    int n;
 
-}
-void Account::edit_file() {
+    std::ifstream infile;
+    infile.open("account_record.dat", std::ios::binary);
+    if(!infile)
+    {
+        std::cout << "ERROR: Cannot Open File. File is not found!" << std::endl;
+        return; 
+    }
 
+    infile.seekg(0, std::ios::end);
+
+    int count = infile.tellg()/sizeof(*this);
+
+    std::cout << "There are " << count << " account in the file.\n";
+    std::cout << "Enter the account order to search: ";
+    std::cin >> n;
+
+    infile.seekg((n-1)*sizeof(*this));
+    infile.read(reinterpret_cast<char*>(this), sizeof(*this));
+
+    std::cout << "Account No." << n << std::endl;
+    show_account_info();
 }
+
 void Account::delete_file() {
+    int n;
+    std::ifstream infile;
+    infile.open("account_record.dat", std::ios::binary);
 
+    if(!infile)
+    {
+        std::cout << "ERROR: Cannot Open File. File is not found!" << std::endl;
+        return;
+    }
+    infile.seekg(0, std::ios::end);
+
+    int count = infile.tellg()/sizeof(*this);
+
+    std::cout << "There are " << count << " account in the file.\n";
+    std::cout << "Enter the account order to delete: ";
+    std::cin >> n;
+
+    std::fstream file_temp;
+    file_temp.open("account_temp.dat", std::ios::out | std::ios::binary);
+    infile.seekg(0);
+    for(int i=0; i<count; i++)
+    {
+        infile.read(reinterpret_cast<char*>(this),sizeof(*this));
+        if(i==(n-1))
+            continue;
+        file_temp.write(reinterpret_cast<char*>(this), sizeof(*this));
+    }
+
+    infile.close();
+    file_temp.close();
+    remove("account_record.dat");
+    rename("account_temp.dat", "account_record.dat");
 }
 
 
@@ -150,25 +202,36 @@ int main() {
         switch (option) {
             case '1': //create account
                 //user.create_account();
+                std::cout << std::endl;
                 user.write_file();
+                system("pause");
                 break;
             case '2': //show account information
+                std::cout << std::endl;
                 //user.show_account_info();
                 user.read_file();
+                system("pause");
                 break;
             case '3': //show account balance
-                user.show_account_balance();
+                //user.show_account_balance();
+                user.search_file();
+                system("pause");
                 break;
             case '4': //deposit
                 user.deposit();
+                system("pause");
                 break;
             case '5': //withdraw
                 user.withdraw();
+                system("pause");
                 break;
             case '6': //close account
-                user.close_account();
+                //user.close_account();
+                user.delete_file();
+                system("pause");
                 break;
             case '7':
+                std::cout << "Exit . . .";
                 run = false;
                 break;
             default:
@@ -177,9 +240,6 @@ int main() {
                 break;
         }
     }
-    
-    
-    system("pause");
 
     return 0;
 }
