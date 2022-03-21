@@ -10,4 +10,3 @@
 7. [Fizz Buzz Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/fizz_buzz_game)
 8. [Multiple Account Login System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/multiple_account_login_system) (In Progress)
 9. [Banking Record System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/banking_record_system)
-10. [Text Adventure Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/text_adventure_game) (In Progress)
