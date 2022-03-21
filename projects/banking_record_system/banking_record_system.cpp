@@ -81,20 +81,48 @@ void Account::user_options() {
               << "[7]. Exit.\n";
 }
 
+void Account::write_file() {
+    std::ofstream outfile;
+    outfile.open("account_record.dat", std::ios::binary | std::ios::app);
+    create_account();
+    outfile.write(reinterpret_cast<char *>(this), sizeof(*this));
+    outfile.close();
+}
 
+void Account::read_file() {
+    std::ifstream infile;
+    infile.open("account_record.dat", std::ios::binary);
+    if(!infile)
+    {
+        std::cout << "Error in Opening! File Not Found!!" << std::endl;
+        return;
+    }
+    std::cout << "\n****Data from file****" << std::endl;
+    while(!infile.eof())
+    {
+        if(infile.read(reinterpret_cast<char*>(this), sizeof(*this)))
+        {
+            show_account_info();
+        }
+    }
+    infile.close();
+}
+
+
+
+void Account::search_file() {
+
+}
+void Account::edit_file() {
+
+}
+void Account::delete_file() {
+
+}
 
 
 /*
-//User options
-        void create_account();          //read data
-    void close_account();           //delete data
-    void show_account_info();       //show data
-    void show_account_balance();    //show data
-    void deposit();                 //edit data
-    void withdraw();                //edit data
-
 //System function
-    void prompt_options();
     void read_file();
     void write_file();
     void search_file();
@@ -105,8 +133,10 @@ void Account::user_options() {
 /*
     Main function
 */
+void intro();
 
 int main() {
+    intro();
 
     Account user;
 
@@ -119,10 +149,12 @@ int main() {
 
         switch (option) {
             case '1': //create account
-                user.create_account();
+                //user.create_account();
+                user.write_file();
                 break;
             case '2': //show account information
-                user.show_account_info();
+                //user.show_account_info();
+                user.read_file();
                 break;
             case '3': //show account balance
                 user.show_account_balance();
@@ -150,4 +182,16 @@ int main() {
     system("pause");
 
     return 0;
+}
+
+
+void intro()
+{
+	std::cout << "\n\n"
+              << "==================================\n"
+              << "      BANK MANAGEMENT SYSTEM\n"
+              << "==================================\n"
+              << "\n\n";
+    system("pause");
+    std::cout << std::endl;
 }
