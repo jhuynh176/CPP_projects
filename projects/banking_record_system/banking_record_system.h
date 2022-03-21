@@ -1,6 +1,10 @@
 #ifndef BANKING_RECORD_SYSTEM_H
 #define BANKING_RECORD_SYSTEM_H
 
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+
 /*
 - This project apply the knowledge of:
     - `add`
@@ -23,7 +27,10 @@ private:
     char account_number[20];
     char first_name[10];
     char last_name[10];
-    float account_balance;
+    float account_balance = 0.00;
+
+    char username[20];
+    char password[20];
 public:
 //User options
     void create_account();          //read data
@@ -34,6 +41,7 @@ public:
     void withdraw();                //edit data
 
 //System function
+    void promt_options();
     void read_file();
     void write_file();
     void search_file();
