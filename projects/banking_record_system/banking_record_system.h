@@ -28,6 +28,8 @@ private:
     char first_name[10];
     char last_name[10];
     float account_balance = 0.00;
+    float money_deposit;
+    float money_withdraw;
 
     char username[20];
     char password[20];
@@ -41,7 +43,7 @@ public:
     void withdraw();                //edit data
 
 //System function
-    void promt_options();
+    void user_options();
     void read_file();
     void write_file();
     void search_file();
