@@ -7,7 +7,7 @@
 </blockquote>
 - It’s quite a bit like that classic game, “Hangman”, but with a better premise. 
 
-<!-- picture here -->
+<!-- insert here: ufo_abduction.gif -->
 
 ## Description
 - Invaders from outer space have arrived and are abducting humans using tractor beams. 
