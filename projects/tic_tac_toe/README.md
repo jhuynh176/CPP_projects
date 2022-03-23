@@ -5,7 +5,7 @@
 - The player who succeeds in placing three of their marks in a horizontal, vertical or diagonal row wins the game.
 
 <h2 align="center">
-  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/tic_tac_toe/animation.gif" alt="game" width="80%" />
+  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/tic_tac_toe/animation.gif" alt="game" width="35%" />
   <br>
 </h2>
 
