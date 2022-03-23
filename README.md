@@ -10,7 +10,7 @@
 
 
 ## Link to Games
-1. [Rock Paper Scissor Lizard Spock](https://github.com/jhuynh176/cpp_projects/tree/main/projects/rock_paper_scissor_lizard_spock)
+1. [Rock Paper Scissor Lizard Spock - OOP](https://github.com/jhuynh176/cpp_projects/tree/main/projects/rock_paper_scissor_lizard_spock)
 2. [Jeopardy - A Harry Potter Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/sorting_hat)
 3. [UFO - Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/UFO_game) 
 
