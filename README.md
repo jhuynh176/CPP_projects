@@ -13,6 +13,7 @@
 1. [Rock Paper Scissor Lizard Spock - OOP](https://github.com/jhuynh176/cpp_projects/tree/main/projects/rock_paper_scissor_lizard_spock)
 2. [Jeopardy - A Harry Potter Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/sorting_hat)
 3. [UFO - Game](https://github.com/jhuynh176/cpp_projects/tree/main/projects/UFO_game) 
+4. [Tic Tac Toe - Using Data Structure](https://github.com/jhuynh176/cpp_projects/tree/main/projects/tic_tac_toe)
 
 ### Acronym
 - OOP - Object-Oriented Program
