@@ -115,3 +115,11 @@ bool winner_found(bool winner, char player) {
     }
     return game_on;
 }
+
+void game_initiate(int &turn, bool &game_run) {
+    turn = 0;
+    game_run = true;
+    system ("cls");
+    sample_grid();
+    system("pause");
+}

@@ -19,12 +19,9 @@ int main() {
         menu(option);
         switch (option) {
             case '1':
-                system ("cls");
                 grid = reset();
-                turn = 0;
-                game_run = true;
-                sample_grid();
-                system("pause");
+                game_initiate(turn, game_run);
+                
                 while (game_run) {
                     system("cls");
                     std::cout << "Current game grid: \n\n";

@@ -13,3 +13,5 @@ std::vector <char> user_input(int, std::vector <char>, char);
 bool check_grid(std::vector <char>);
 char change_player(int);
 bool winner_found(bool, char);
+
+void game_initiate(int &, bool &);
