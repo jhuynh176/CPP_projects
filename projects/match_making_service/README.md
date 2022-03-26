@@ -4,7 +4,7 @@
 - This is a new match-making service: The Object of Your Affection or OOYA for short
 - We will build a pretty well-organized system of dating profiles.
 <h2 align="center">
-  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/match_making_service/phone.gif" alt="Dating App" width="70%" />
+  <img src="https://github.com/jhuynh176/cpp_projects/blob/main/projects/match_making_service/phone.gif" alt="Dating App" width="50%" />
   <br>
 </h2>
 
