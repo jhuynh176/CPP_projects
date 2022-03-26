@@ -5,8 +5,9 @@
 2. [Restaurant Trip Advisor](https://github.com/jhuynh176/cpp_projects/tree/main/projects/restaurant_trip_advisor)
 3. [Functionality for A Linked List of Strings](https://github.com/jhuynh176/cpp_projects/tree/main/projects/linked_list_strings_functionality)
 4. [Stack and Queue Scheduler on CPU](https://github.com/jhuynh176/cpp_projects/tree/main/projects/stack_queue_arithmetic_expression)
-5. [Multiple Account Login System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/multiple_account_login_system) (In Progress)
-6. [Banking Record System - OOP - Database](https://github.com/jhuynh176/cpp_projects/tree/main/projects/banking_record_system)
+5. [Match-Making Service](https://github.com/jhuynh176/cpp_projects/tree/main/projects/match_making_service)
+6. [Multiple Account Login System](https://github.com/jhuynh176/cpp_projects/tree/main/projects/multiple_account_login_system) (In Progress)
+7. [Banking Record System - OOP - Database](https://github.com/jhuynh176/cpp_projects/tree/main/projects/banking_record_system)
 
 
 ## Link to Games
